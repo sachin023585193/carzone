@@ -1,0 +1,56 @@
+#header {
+    background-color: #fff !important;
+    color: #ff0000 !important;
+    box-shadow: 0 0 3px 0 #ff0000 !important;
+}
+
+#header a:link,
+#header a:visited {
+    color: #000 !important;
+}
+
+div.breadcrumbs {
+    background-color: black !important;
+}
+
+.module h2,
+.module caption,
+.inline-group h2 {
+    background-color: black;
+}
+
+.button.default,
+input[type=submit].default,
+.submit-row input.default {
+    background: black !important;
+}
+
+a:link,
+a:visited {
+    color: black;
+}
+
+.button,
+input[type=submit],
+input[type=button],
+.submit-row input,
+a.button {
+    background-color: #4e5557;
+}
+
+.button:hover,
+input[type=submit]:hover,
+input[type=button]:hover,
+.submit-row input:hover,
+a.button:hover {
+    background-color: #1f2121;
+}
+
+.button.default:active,
+input[type=submit].default:active,
+.button.default:focus,
+input[type=submit].default:focus,
+.button.default:hover,
+input[type=submit].default:hover {
+    background-color: #1f2121;
+}
