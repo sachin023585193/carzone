@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'django.contrib.humanize',
     'accounts.apps.AccountConfig',
+    'contacts.apps.ContactsConfig',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
