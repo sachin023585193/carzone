@@ -21,7 +21,8 @@
             <h1>Contact <span>Us</span></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
         </div>
-        <form action="#" method="POST" enctype="multipart/form-data">
+        <form action="{% url 'contact' %}" method="POST">
+            {% include 'includes/message.html' %} {% csrf_token %}
             <div class="row">
                 <div class="col-lg-7">
                     <div class="row">
@@ -74,7 +75,7 @@
                             </div>
                             <div class="detail">
                                 <h5>Email:</h5>
-                                <p><a href="#">info@themevessel.com</a></p>
+                                <p><a href="#">info@idkemail.com</a></p>
                             </div>
                         </div>
                         <div class="ci-box">
@@ -83,7 +84,7 @@
                             </div>
                             <div class="detail">
                                 <h5>Web:</h5>
-                                <p><a href="#">info@themevessel.com</a></p>
+                                <p><a href="#">info@carzone.com</a></p>
                             </div>
                         </div>
                         <div class="ci-box mb-0">
@@ -92,7 +93,7 @@
                             </div>
                             <div class="detail">
                                 <h5>Fax:</h5>
-                                <p><a href="#">+0477 85X6 552</a></p>
+                                <p><a href="#">+977 9824 9797 94</a></p>
                             </div>
                         </div>
                     </div>
