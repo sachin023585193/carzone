@@ -1,7 +1,8 @@
-import email
 from django.contrib import messages,auth
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User
+from contacts.models import contact
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def login(request):
@@ -46,8 +47,11 @@ def register(request):
     else:
         return render(request,'account/register.html')
 
+@login_required(login_url='login')
 def dashboard(request):
-    return render(request,'account/dashboard.html')
+    user_inquiry = contact.objects.order_by('-created_date').filter(user_id=request.user.id)
+    context = {'inquiries':user_inquiry}
+    return render(request,'account/dashboard.html',context)
 
 def logout(request):
     if request.method == 'POST':

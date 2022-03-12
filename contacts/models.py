@@ -4,6 +4,7 @@ from django.db import models
 # Create your models here.
 class contact(models.Model):
     first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
     car_id = models.IntegerField()
     customer_need = models.CharField(max_length=100)
     car_title = models.CharField(max_length=100)

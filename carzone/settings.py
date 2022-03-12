@@ -159,3 +159,10 @@ MESSAGE_TAGS = {
 }
 
 SITE_ID = 1
+
+# email sending
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_POST = '587'
+EMAIL_HOST_USER = 'sachinbh023@gmail.com'
+EMAIL_HOST_PASSWORD = 'fromdamak8'
+EMAIL_USE_TLS = True
